@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.androidapp.MainActivity">
+
+    <EditText
+            android:id="@+id/Address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:minLines="1"
+            android:scrollHorizontally="false"
+            android:scrollbars="vertical"
+        />
+
+    <Button
+        android:id="@+id/Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Address"
+        android:layout_centerHorizontal="true"
+        android:onClick="ButtonClicked"
+        android:text="Submit" />
+
+    <TextView
+        android:id="@+id/infoText"
+        android:layout_width="match_parent"
+        android:layout_height="116dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Button"
+        android:typeface="serif"/>
+
+</RelativeLayout>
